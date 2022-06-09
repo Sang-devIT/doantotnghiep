@@ -1,0 +1,23 @@
+﻿<div class="header">
+    <div class="wrap-content d-flex align-items-center">
+        <div class="logo ">
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/assets/images/logo-2265.png" />
+            </a>
+        </div>
+        <div class="top-search">
+            <div class="search  ">
+                <input type="text" id="keyword" placeholder="Nhập từ khóa tìm kiếm" onkeypress="doEnter(event,'keyword');" />
+                <p onclick="onSearch('keyword');"><img src="~/assets/images/icon-search.png" alt="Icon search"></p>
+            </div>
+        </div>
+        <div class="header-hotline">
+            <p>Hotline:</p>
+            <p>0773 665 251</p>
+        </div>
+        <div class="header-address">
+            <span>Địa chỉ: Cao lỗ phường 4 quận 8 TP.HCM</span>
+        </div>
+
+    </div>
+</div>

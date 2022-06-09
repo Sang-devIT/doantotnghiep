@@ -114,3 +114,15 @@ C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.dll
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\ref\LaptopShop.dll
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.pdb
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Shared\_LayoutShop.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Shared\_footer.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Shared\_header.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Shared\_menu.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\product.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Introduce.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Policy.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\News.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Promotion.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\SignleProduct.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
