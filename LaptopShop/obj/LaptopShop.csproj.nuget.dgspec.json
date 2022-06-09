@@ -1,27 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\LaptopShop\\LaptopShop\\LaptopShop.csproj": {}
+    "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\LaptopShop\\LaptopShop\\LaptopShop.csproj": {
+    "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\LaptopShop\\LaptopShop\\LaptopShop.csproj",
+        "projectUniqueName": "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj",
         "projectName": "LaptopShop",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\LaptopShop\\LaptopShop\\LaptopShop.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\LaptopShop\\LaptopShop\\obj\\",
+        "projectPath": "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj",
+        "packagesPath": "C:\\Users\\84348\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\84348\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -46,6 +40,16 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
@@ -69,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }
