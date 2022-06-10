@@ -800,6 +800,10 @@ img:not([src]) {
         padding: 0px 34px 0px;
     }
 
+        .menu > .wrap-content > ul > li > a > i {
+            font-size: 20px
+        }
+
     .menu > .wrap-content > ul li a.has-child {
     }
 
