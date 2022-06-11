@@ -1,0 +1,45 @@
+﻿
+<div class="wrap-content">
+
+    <div class="content-main">
+        <div class="title-main"><span>Sản phẩm</span></div>
+        @*<?php if(!empty($product)) { ?>*@
+        <div class="product-content  d-flex flex-wrap w-clear">
+            @*<?php  foreach($product as $k => $v) { ?>*@
+
+            <div class="product-items-detail">
+                <div class="product-item">
+                    <div class="product-image">
+                        <a href="<?=$v[$sluglang]?>">
+                            <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/untitled-7-copy-7819.jpg' alt='Lenovo Legion 5 17″ Gen 6 (AMD) (2022)' />
+                        </a>
+                        <p></p>
+                    </div>
+                    <div class="product-desc">
+                        <h3 class="product-name"><a href="lenovo-legion-5-17-gen-6-amd-2022">Lenovo Legion 5 17″ Gen 6 (AMD) (2022)</a></h3>
+                        <p class="product-struct"><span>CPU</span>   AMD Ryzen™ 5 5600H Up To 4.2GHz (6 Cores 19MB Cache)</p>
+                        <p class="product-struct"><span>RAM</span>   DDR4 8GB 3200MHz</p>
+                        <p class="product-struct"><span>SSD</span>   256GB PCIe M.2 SSD</p>
+                        <p class="product-struct"><span>VGA</span>   NVIDIA GeForce® GTX 1650 4GB GDDR6</p>
+                    </div>
+                    <p class="product-price">
+                        Giá từ:<span class='price-new'>23.500.000<sup>đ</sup></span>
+                    </p>
+                </div>
+            </div>
+            @*<?php } ?>*@
+        </div>
+        @*<?php } else { ?>*@
+        @*<div class="col-12">
+            <div class="alert alert-warning w-100" role="alert">
+                <strong><?=khongtimthayketqua?></strong>
+            </div>
+        </div>
+        <?php } ?>
+        <div class="clear"></div>
+        <div class="col-12">
+            <div class="pagination-home w-100"><?=(!empty($paging)) ? $paging : ''?></div>
+        </div>*@
+    </div>
+
+</div>

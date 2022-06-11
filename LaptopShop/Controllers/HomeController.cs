@@ -22,7 +22,38 @@ namespace LaptopShop.Controllers
         {
             return View();
         }
-
+        public IActionResult Product()
+        {
+            return View();
+        }
+        public IActionResult SignleProduct()
+        {
+            return View();
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Introduce()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
+        public IActionResult Policy()
+        {
+            return View();
+        }
+        public IActionResult News()
+        {
+            return View();
+        }
+        public IActionResult Promotion()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
