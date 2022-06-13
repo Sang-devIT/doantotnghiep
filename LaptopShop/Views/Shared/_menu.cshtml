@@ -28,7 +28,18 @@
             <li><a class=" transition" asp-controller="Home" asp-action="Policy" title="Chính sách">Chính sách</a></li>
             <li><a class=" transition" asp-controller="Home" asp-action="Introduce" title="Giới thiệu">Giới thiệu</a></li>
             <li><a class=" transition" asp-controller="Home" asp-action="Contact" title="Liên hệ">Liên hệ</a></li>
-            <li><a class=" transition" asp-controller="Home" asp-action="Login" title="Đăng nhập">Đăng nhập</a></li>
+            @if (ViewBag.Username == null)
+            {
+                <li><a class=" transition" asp-controller="Home" asp-action="Login" title="Đăng nhập">Đăng nhập</a></li>
+            }
+            else
+            {
+                <li><a class=" transition" asp-controller="Home" asp-action="Logout" title="Đăng nhập">Đăng Xuất</a></li>
+            }
+       
+
+
+            <li><a class=" transition" asp-controller="Home" asp-action="Cart" title="Giỏ hàng"><i class="fas fa-shopping-cart"></i>Giỏ hàng</a></li>
 
         </ul>
 
