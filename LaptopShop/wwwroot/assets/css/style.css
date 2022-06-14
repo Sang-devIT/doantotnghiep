@@ -698,7 +698,7 @@ img:not([src]) {
         width: 100%;
         list-style: none;
         padding: 5px 12px;
-        display: block;
+        display: none;
     }
 
 .menu .menu-left:hover > ul {
