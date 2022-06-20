@@ -3,6 +3,7 @@ using LaptopShop.Areas.Admin.Models;
 using LaptopShop.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -39,16 +40,19 @@ namespace LaptopShop.Controllers
             {
                 ViewBag.Username = HttpContext.Session.GetString("Username");
             }
-          
-            return View();
+            var product = _context.Products.Include(c=>c.Carts).ToList();
+            return View(product);
         }
-        public IActionResult SignleProduct()
+        public IActionResult Product_details(int id)
         {
             if (HttpContext.Session.Keys.Contains("Username"))
             {
                 ViewBag.Username = HttpContext.Session.GetString("Username");
             }
-            return View();
+           
+            var product = _context.Products.Include(a=>a.ProductType).Where(prd => prd.Id == id);
+            return View(product);
+        
         }
        
         public IActionResult Cart()
@@ -57,7 +61,14 @@ namespace LaptopShop.Controllers
             {
                 ViewBag.Username = HttpContext.Session.GetString("Username");
             }
-            return View();
+            else
+            {
+                return RedirectToAction("Login");
+            }
+            ViewBag.Username = HttpContext.Session.GetString("Username");
+            string username = HttpContext.Session.GetString("Username");
+            var listCart = _context.Carts.Include(c => c.User).Include(c => c.Products).Where(c => c.User.Username == username);
+            return View(listCart.ToList());
         }
         public IActionResult Introduce()
         {
@@ -190,6 +201,50 @@ namespace LaptopShop.Controllers
         {
             HttpContext.Session.Clear();
             return RedirectToAction("Login");
+        }
+
+        public IActionResult AddToCart(int id)
+        {
+            return AddToCart(id,1);
+        }
+
+        [HttpPost]
+        public IActionResult AddToCart(int productId, int quantity)
+        {
+            if (HttpContext.Session.Keys.Contains("Username"))
+            {
+                ViewBag.Username = HttpContext.Session.GetString("Username");
+            }
+            else
+            {
+                return RedirectToAction("Login");
+            }
+            string username = HttpContext.Session.GetString("Username");
+            int userID = _context.Users.FirstOrDefault(a => a.Username == username).Id;
+            Cart cart = _context.Carts.FirstOrDefault(c => c.UserID == userID && c.ProductId == productId);
+            if (cart == null)
+            {
+                cart = new Cart();
+                cart.UserID = userID;
+                cart.ProductId = productId;
+                cart.Quantity = quantity;
+
+                _context.Carts.Add(cart);
+            }
+            else
+            {
+                cart.Quantity += quantity;
+
+            }
+            _context.SaveChanges();
+            return RedirectToAction("Cart", "Home");
+        }
+        public async Task<IActionResult> DeleteSp(int id)
+        {
+            var cart = await _context.Carts.FindAsync(id);
+            _context.Carts.Remove(cart);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Cart", "Home");
         }
     }
 }
