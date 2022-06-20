@@ -39,6 +39,7 @@ namespace LaptopShop.Controllers
             {
                 ViewBag.Username = HttpContext.Session.GetString("Username");
             }
+          
             return View();
         }
         public IActionResult SignleProduct()
@@ -172,6 +173,7 @@ namespace LaptopShop.Controllers
                 if (check == null)
                 {
                     user.Password = GetMD5(user.Password);
+                    user.Status = true;
                     _context.Users.Add(user);
                     _context.SaveChanges();
                     return RedirectToAction("Login");
