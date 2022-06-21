@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<LaptopShop.Areas.Admin.Models.Product>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -117,7 +118,7 @@
         <div class="wrap-content">
             <div class="product-office">
                 <h3 class="title"><span> Laptop văn phòng giá tốt</span></h3>
-                <div class="owl-page owl-carousel owl-theme"
+                @*<div class="owl-page owl-carousel owl-theme"
                      data-xsm-items="2:10"
                      data-sm-items="2:10"
                      data-md-items="3:4"
@@ -134,47 +135,33 @@
                      data-dots="0"
                      data-nav="1"
                      data-navtext="<i class='fa fa-chevron-left'></i>|<i class='fa fa-chevron-right'></i>"
-                     data-navcontainer=".control-product1">
-                    <div class="product-items">
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img src="~/assets/images/untitled-13-3895.jpg" />
-                                </a>
-                                <p>Có 1 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">Lenovo Legion 5 17″ Gen 6 (AMD) (2022)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   AMD Ryzen™ 5 5600H Up To 4.2GHz (6 Cores 19MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 8GB 3200MHz</p>
-                                <p class="product-struct"><span>SSD</span>   256GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   NVIDIA GeForce® GTX 1650 4GB GDDR6</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>23.500.000<sup>đ</sup></span>
-                            </p>
+                     data-navcontainer=".control-product1">*@
+            <div class="product-items">
+                @foreach (var i in Model)
+                {
+                    <div class="product-item">
+                        <div class="product-image">
+                            <a asp-controller="Home" asp-action="SignleProduct">
+                                <img src="@i.Image" alt="@i.Name" />
+                            </a>
+                            <p>Có 1 lựa chọn cấu hình</p>
                         </div>
-
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/dell-inspiron-14-5410-2021-features-04-1128.jpeg' alt='DELL Inspiron 14 5410 (2021)' />
-                                </a>
-                                <p>Có 2 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">DELL Inspiron 14 5410 (2021)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   Intel® Core i5 11300H Up To 4.4GHz (4 Cores 8MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 8GB 3200MHz</p>
-                                <p class="product-struct"><span>SSD</span>   512GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   Intel® Iris® Xe Graphics</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>19.500.000<sup>đ</sup></span>
-                            </p>
+                        <div class="product-desc">
+                            <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">@i.Name</a></h3>
+                            <p class="product-struct"><span>CPU</span>   @i.Cpu</p>
+                            <p class="product-struct"><span>RAM</span>   @i.Ram</p>
+                            <p class="product-struct"><span>SSD</span>   @i.Storage</p>
+                            <p class="product-struct"><span>VGA</span>   @i.Screens</p>
                         </div>
+                        <p class="product-price">
+                            Giá từ:<span class='price-new'>@i.Price<sup>đ</sup></span>
+                        </p>
                     </div>
-                    <div class="product-items">
+                }
+
+
+            </div>
+                    @*<div class="product-items">
                         <div class="product-item">
                             <div class="product-image">
                                 <a asp-controller="Home" asp-action="SignleProduct">
@@ -291,10 +278,7 @@
                                 Giá từ:<span class='price-new'>60.000.000<sup>đ</sup></span>
                             </p>
                         </div>
-                    </div>
-
-                </div>
-                <div class="control-product control-product1"></div>
+                    </div>*@
             </div>
             <div class="product-resolution">
                 <h3 class="title"><span>Laptop cẤu hình cao giá tốt</span></h3>
@@ -353,7 +337,6 @@
                                 Giá từ:<span class='price-new'>19.500.000<sup>đ</sup></span>
                             </p>
                         </div>
-
                     </div>
                     <div class="product-items">
                         <div class="product-item">
@@ -474,9 +457,7 @@
                                 Giá từ:<span class='price-new'>60.000.000<sup>đ</sup></span>
                             </p>
                         </div>
-
                     </div>
-
                 </div>
                 <div class="control-product control-product2"></div>
             </div>
