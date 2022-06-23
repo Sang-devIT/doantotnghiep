@@ -137,7 +137,7 @@
                      data-navtext="<i class='fa fa-chevron-left'></i>|<i class='fa fa-chevron-right'></i>"
                      data-navcontainer=".control-product1">*@
             <div class="product-items">
-                @foreach (var i in Model)
+                @*@foreach (var i in Model)
                 {
                     <div class="product-item">
                         <div class="product-image">
@@ -147,17 +147,17 @@
                             <p>Có 1 lựa chọn cấu hình</p>
                         </div>
                         <div class="product-desc">
-                            <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">@i.Name</a></h3>
+                            <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct" asp-route-id="@i.Id">@i.Name</a></h3>
                             <p class="product-struct"><span>CPU</span>   @i.Cpu</p>
                             <p class="product-struct"><span>RAM</span>   @i.Ram</p>
                             <p class="product-struct"><span>SSD</span>   @i.Storage</p>
-                            <p class="product-struct"><span>VGA</span>   @i.Screens</p>
+                            <p class="product-struct"><span>VGA</span>   @i.Graphics</p>
                         </div>
                         <p class="product-price">
-                            Giá từ:<span class='price-new'>@i.Price<sup>đ</sup></span>
+                            Giá từ:<span class='price-new'>@i.Price.ToString("#,##0 VNĐ")</span>
                         </p>
                     </div>
-                }
+                }*@
 
 
             </div>

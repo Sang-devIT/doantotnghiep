@@ -115,7 +115,6 @@ C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\bin\Debug\net5.0\runtimes\win-arm\li
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.csprojAssemblyReference.cache
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.AssemblyInfoInputs.cache
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.AssemblyInfo.cs
@@ -164,9 +163,9 @@ C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Ne
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Policy.cshtml.g.cs
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\product.cshtml.g.cs
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Product_details.cshtml.g.cs
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Promotion.cshtml.g.cs
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\Register.cshtml.g.cs
-C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Home\SignleProduct.cshtml.g.cs
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Shared\_footer.cshtml.g.cs
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\Razor\Views\Shared\_header.cshtml.g.cs
@@ -184,3 +183,4 @@ C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.dll
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\ref\LaptopShop.dll
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.pdb
 C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\LaptopShop\LaptopShop\obj\Debug\net5.0\LaptopShop.csprojAssemblyReference.cache

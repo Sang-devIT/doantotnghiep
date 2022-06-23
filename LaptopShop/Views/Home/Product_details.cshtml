@@ -1,0 +1,251 @@
+﻿@model IEnumerable<LaptopShop.Areas.Admin.Models.Product>
+
+
+
+
+
+
+
+<div class="wrap-main  w-clear">
+    @foreach (var item in Model)
+    {
+        <div class="grid-pro-detail w-clear">
+
+
+            <p class="title-pro-detail mb-2">@item.Name</p> (@item.Average_Number_Stars sao/@item.Number_Of_Reviews Đánh giá)
+
+            <div class="row">
+                <div class="left-pro-detail col-md-4 col-lg-4 mb-4">
+
+                    <a id="Zoom-1" class="MagicZoom" data-options="zoomMode: off; hint: off; rightClick: true; selectorTrigger: hover; expandCaption: false; history: false;" href="#" title="Lenovo Legion 5 17″ Gen 6 (AMD) (2022)">
+                        <img src="@item.Image" />
+                    </a>
+                </div>
+
+                <div class="right-pro-detail col-md-4 col-lg-4 mb-4">
+                    <div class="border-box box-bottom">
+                        <ul>
+                            <li class="w-clear">
+                                <strong>CPU: </strong>@item.Cpu
+                            </li>
+                            <li class="w-clear">
+                                <strong>Ram: </strong>@item.Ram
+                            </li>
+                            <li class="w-clear">
+                                <strong>SSD: </strong>@item.Storage
+                            </li>
+                            <li class="w-clear">
+                                <strong>VGA: </strong>@item.Graphics
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <ul class="attr-pro-detail">
+
+                        <li class="w-clear">
+                            <label class="attr-label-pro-detail">
+                                Số lượng
+
+                                <div class="quantity-counter-procart d-flex align-items-stretch justify-content-between">
+                                    <span class="counter-procart-minus counter-procart">-</span>
+                                    <input type="number" class="quantity-procart" min="1" value="1" />
+                                    <span class="counter-procart-plus counter-procart">+</span>
+
+                                </div>
+
+                                @item.Stock sản phẩm có sẵn
+                            </label>
+                        </li>
+                        <li class="w-clear">
+                            <label class="attr-label-pro-detail">Thương hiệu:</label>
+                            <div class="attr-content-pro-detail"><a class="text-decoration-none" href="lenovo" title="Lenovo">@item.ProductType.Name</a></div>
+                        </li>
+                        <li class="w-clear">
+                            <label class="attr-label-pro-detail">Giá từ:</label>
+                            <div class="attr-content-pro-detail">
+                                <span class="price-new-pro-detail">@item.Price.ToString("#,##0 VNĐ")</span>
+                            </div>
+                        </li>
+                        <li class="w-clear">
+                            <div class="cart-pro-detail">
+                                <a class="btn btn-success addcart rounded-0 mr-2" asp-controller="Home" asp-action="AddtoCart" asp-route-id="@item.Id">
+                                    <i class="fas fa-shopping-bag mr-1"></i>
+                                    <span>Thêm vào giỏ hàng</span>
+                                </a>
+                                <a class="btn btn-dark addcart rounded-0" asp-controller="Home" asp-action="Cart">
+                                    <i class="fas fa-shopping-bag mr-1"></i>
+                                    <span>Mua ngay</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-plugin social-plugin-pro-detail w-clear">
+                        <div class="addthis_inline_share_toolbox_dc09"></div>
+                        <div class="zalo-share-button" data-href="http://localhost/laptopannhien_638622W/lenovo-legion-5-17-gen-6-amd-2022" data-oaid="579745863508352884" data-layout="3" data-color="blue" data-customize=false></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="tags-pro-detail w-clear">
+        </div>
+        <div class="row">
+            <div class="col-md-7 col-12">
+
+                <h2 style="margin-top: 0.5em;font-size:24px; font-weight: bold !Important; border-bottom: 1px solid #bebebe; text-transform: uppercase;">Thông tin sản phẩm</h2>
+                <div>
+                    <p>
+                        Với nhiều tùy chọn hiệu năng cho mọi game thủ trong một thiết kế tối giản, gọn gàng, <strong>@item.Name</strong> kết hợp bộ xử lý <strong>@item.Cpu</strong> <strong>@item.Graphics</strong> và ổ cứng @item.Storage. Hãy tận hưởng tốc độ làm tươi nhanh chóng mặt trên màn hình FHD có độ chính xác màu cao và điều khiển mọi thứ thật nhanh với bàn phím TrueStrike để vượt qua đối thủ.<br />
+                    </p>
+
+                    <h3><strong>Hiệu suất chơi game vượt trội</strong></h3>
+
+                    <p>
+                        Nhiều lõi hơn sẽ đem lại hiệu năng cao. Với số lượng lõi nhiều nhất dành cho máy tính xách tay siêu mỏng, @item.Cpu cho phép bạn làm được nhiều việc hơn, nhanh hơn bao giờ hết. Kiến trúc lõi mang tính cách mạng “Zen 3” 7nm của AMD đã mang lại sự đột phá chưa từng có về tốc độ và hiệu suất khi xử lý các tác vụ đa nhiệm và khối lượng công việc lớn trên thế hệ máy tính xách tay siêu mỏng mạnh mẽ mới nhất. Từ khởi động ứng dụng và duyệt web, đến làm việc và giải trí hết mình, mọi thứ đều nhanh hơn và nhạy hơn.<br />
+                    </p>
+
+                    <h3><strong>Khám phá trò chơi yêu thích tiếp theo</strong></h3>
+
+                    <p>Nhận quyền truy cập không giới hạn vào hơn 100 trò chơi PC chất lượng cao trên @item.Operating_System với Xbox Game Pass cho PC (Beta). Bạn có thể tham gia với giá rẻ hàng tháng trong giai đoạn beta. Tải xuống và chơi các trò chơi mới nhất ngay trong ngày phát hành như Gears 5, các trò chơi bom tấn gần đây như Age of Empires II, cũng như các trò chơi độc lập được đánh giá cao. Các trò chơi mới luôn được thêm vào để bạn sẽ luôn có game mới để thưởng thức.</p>
+
+
+                    <h3><strong>Cảm nhận sức mạnh của Coldfront</strong></h3>
+
+                    <p><strong>@item.Name</strong> có thể chạy ở mức công suất mà các đối thủ phải e ngại với hiệu năng tản nhiệt vượt trội giúp xử lý bất kỳ cấu hình nào bạn muốn. Được tản nhiệt đến mức hoàn hảo, hệ thống Legion Coldfront 2.0 làm mát và tản nhiệt thông qua cơ chế nhiệt kênh đôi gồm 67 cánh quạt phủ polyme tinh thể lỏng và các ống đồng dẫn nhiệt chuyên dụng. Sự kết hợp này sẽ giúp bạn cho các đối thủ hít bụi và ngoài ra, việc bổ sung Q Control 3.0 cho phép bạn chọn thủ công giữa các chế độ nhiệt Yên tĩnh, Cân bằng và Hiệu năng. Máy cũng hỗ trợ chức năng Dual Burn để tận dụng CPU và GPU chạy cùng nhau nhằm mang lại hiệu năng tối đa trong trò chơi.</p>
+
+
+                    <h3><strong>Làm mới nhanh chóng, màu sắc trung thực</strong></h3>
+
+                    <p>Cho dù bạn bạn đang tìm kiếm loại máy tính xách tay có tốc độ làm mới nhanh nhất để có lợi thế khi đấu eSports hay các hiệu ứng ánh sáng bắt mắt nhất có thể, <strong>@item.Name</strong> đều chính là cỗ máy bạn muốn. Bạn có nhiều lựa chọn trên mành hình @item.Screens của máy. Hãy khám phá các tùy chọn giúp bạn chơi game hay hơn với tốc độ làm mới nhanh chóng mặt lên đến 144Hz và thời gian phản hồi 3 mili giây hoặc đắm mình trong những màn pháo hoa sống động nhờ Dolby Vision™.</p>
+
+
+                    <h3><strong>Nhấn mạnh, nhấn đúng</strong></h3>
+
+                    <p>Bạn muốn khả năng kiểm soát và độ chính xác vượt trội từ máy tính xách tay gaming? <strong>@item.Name</strong> đáp ứng yêu cầu này ở cấp độ mới thông qua bàn phím Legion TrueStrike. Được đúc kết từ thành tựu đổi mới trong nhiều năm của Lenovo, TrueStrike có tính năng anti-ghosting 100% và switch soft-landing với hành trình phím 1,5mm để tận dụng thiết kế chuyển tiếp thứ hai, nghĩa là bạn có được hành trình sâu hơn với lực như nhau trong mỗi lần nhấn để có trải nghiệm sử dụng bàn phím hiệu quả hơn, dù đánh rank hay đánh thường. Ngoài ra, TrueStrike có thiết kế bố cục bàn phím hiện đại với các phím đa phương tiện chuyên dụng, bàn phím số, các phím mũi tên lớn và bàn di chuột liền sống động với đèn nền LED nổi bật.</p>
+
+                    <p>
+                        <br />
+                    </p>
+
+                    <h3><strong>Sức mạnh và dòng chảy</strong></h3>
+
+                    <p>Được thiết kế để giúp bạn luôn vượt trội trong mọi cuộc cạnh tranh bất kể cuộc sống đưa bạn đến đâu, <strong>@item.Name</strong> có tuổi thọ pin cả ngày và hệ thống quản lý pin xả động thông minh, được sạc qua bộ đổi nguồn mỏng và tuyệt đẹp. Bạn có thể sạc từ 0 lên đến 50% pin trong vòng chưa đầy 30 phút với Rapid Charge Pro. Chế độ kết hợp và Công nghệ tối ưu tiên tiến tắt card đồ họa rời khi không chơi game, trong khi Q Control 3.0 cho phép bạn chạy Chế độ im lặng giúp giảm yêu cầu điện áp cho CPU để làm việc trong thời gian dài mà không cần sạc.</p>
+
+
+                    <h3><strong>Phải lòng từ cái nhìn đầu tiên</strong></h3>
+
+                    <p>Là sự kết hợp hoàn hảo giữa tính thực dụng, độ chính xác và hiệu năng, <strong>@item.Name</strong> quyến rũ với những đường nét thật đẹp với các điểm nhấn thiết kế tinh tế, từ bản lề khúc xạ ánh sáng và lớp hoàn thiện logo, đến vật liệu pha talc polyme bền chống bám bẩn. Thân máy màu đen Phantom tinh tế giúp sự cân bằng thêm hoàn hảo và kết hợp việc chơi game và lối sống hàng ngày của bạn qua màn hình thật đẹp với viền mylar mỏng ở ba cạnh và một webcam đặt trên cùng (có màn trập bảo mật).</p>
+
+                    <h3><strong>Chất lượng âm thanh bạn cần</strong></h3>
+
+                    <p>Hãy cảm nhận âm thanh mạnh mẽ và tiếng bass sâu lắng của hệ thống loa trên <strong>@item.Name</strong>. Và với tai nghe Dolby Atmos được hỗ trợ, bạn có thể trải nghiệm âm thanh vòm trong không gian ba chiều để nghe âm thanh từ bất kỳ hướng nào với độ trung thực ấn tượng, giúp bạn đắm chìm trong từng môi trường game. Game thủ cũng sẽ tận dụng được sự khác biệt về âm thanh khi xác định được từng tiếng động đến từ đâu trong trò chơi để có thể định vị chính xác các mối đe dọa từ phía trên hoặc phía sau.</p>
+
+
+                    <h3><strong>The Lenovo Vantage</strong></h3>
+
+                    <p>Hãy tận hưởng hiệu năng luôn sẵn sàng để sát cánh cùng bạn, cũng như trải nghiệm sống động và giải trí liên tục với @item.ProductType.Name  for Gaming. Bạn có thể chọn chế độ hiệu năng cho các ứng dụng và trò chơi để hiệu chỉnh tự động. Ép xung CPU và GPU và giải phóng bộ nhớ để đẩy tốc độ khung hình lên hết mức, giảm xuống Chế độ im lặng để tiết kiệm pin hoặc chọn Chế độ cân bằng để sử dụng bình thường. Bạn có thể kiểm soát tất cả ở một nơi!</p>
+
+                    <h3><strong>Hiệu năng khủng bố. Phong cách cao cấp.</strong></h3>
+
+                    <p>Các phụ kiện chơi game của Legion được chế tạo để giúp bạn luôn chiến thắng, với hiệu năng, độ tin cậy và tính thẩm mỹ huyền thoại. Cho dù bạn cần một chiếc túi bọc thép để bảo vệ thiết bị, một con chuột chính xác để nhắm là trúng hay bàn phím tactile để chỉ huy cuộc bao vây một cách dễ dàng, mỗi sản phẩm bổ sung đều là một đồng minh mạnh mẽ trên con đường đi đến vinh quang của bạn.</p>
+
+                    <p> </p>
+
+                </div>
+            </div>
+            <div class="col-md-5 col-12">
+                <h2 style="margin-top: 0.5em;font-size:24px; font-weight: bold !Important; border-bottom: 1px solid #bebebe; text-transform: uppercase;">Thông số kỹ thuật</h2>
+                <table class="table-product" style="width:100%">
+                    <tbody>
+                        <tr>
+                            <td style="width:20%">CPU</td>
+                            <td style="width:80%">@item.Cpu</td>
+                        </tr>
+                        <tr>
+                            <td style="width:20%">Ram</td>
+                            <td style="width:80%">@item.Ram</td>
+                        </tr>
+                        <tr>
+                            <td style="width:20%">SSD</td>
+                            <td style="width:80%">@item.Storage</td>
+                        </tr>
+                        <tr>
+                            <td style="width:20%">VGA</td>
+                            <td style="width:80%">@item.Graphics</td>
+                        </tr>
+                        <tr>
+                            <td style="width:20%">Màn hình</td>
+                            <td style="width:80%">@item.Screens</td>
+                        </tr>
+                        <tr>
+                            <td style="width:20%">Hệ điều hành</td>
+                            <td style="width:80%">@item.Operating_System</td>
+                        </tr>
+                        <tr>
+                            <td style="width:20%">Pin</td>
+                            <td style="width:80%">@item.battery</td>
+                        </tr>
+                        <tr>
+                            <td style="width:20%">Trọng lượng</td>
+                            <td style="width:80%">@item.Weight</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="title-main"><span>Đánh giá sản phẩm</span></div>
+<div class="wrap-content">
+    <div class="content-main w-clear">
+        <div class="owl-page owl-carousel owl-theme"
+             data-xsm-items="2:18"
+             data-sm-items="2:18"
+             data-md-items="3:18"
+             data-lg-items="3:18"
+             data-xlg-items="4:18"
+             data-rewind="1"
+             data-autoplay="1"
+             data-loop="0"
+             data-lazyload="1"
+             data-mousedrag="1"
+             data-touchdrag="1"
+             data-smartspeed="200"
+             data-autoplayspeed="2500"
+             data-dots="0"
+             data-nav="1"
+             data-navtext="<i class='fas fa-chevron-left'></i>|<i class='fas fa-chevron-right'></i>"
+             data-navcontainer=".control-product-0">
+
+
+            <div class="product-item ">
+                <div class="product-image">
+                    <a href="dell-xps-15-9520-2022">
+                        <img src="~/assets/images/slider-4347.jpg" />
+                    </a>
+                </div>
+                <div class="product-desc">
+                    <h3 class="product-name">
+                        <a href="dell-xps-15-9520-2022">DELL XPS 15 9520 (2022) </a>
+                    </h3>
+                    <p class="product-price d-flex align-items-center justify-content-center">
+                        <span class="price-new">60.000.000đ</span>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="clear"></div>
+
+    </div>
+</div>
