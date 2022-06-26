@@ -26,8 +26,15 @@ using LaptopShop.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\84348\OneDrive\Desktop\bug\doantotnghiep\LaptopShop\Views\_ViewImports.cshtml"
+using LaptopShop.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"320cc8a94bcf93e9469a400d618f86a3eb5d01c4", @"/Views/Shared/_menu.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4b7744e0287f69a68d6cc5517a1538b1284205ee", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8f66d9f5e6cfba72e344d82a22442955372af3d", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__menu : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Home", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -73,7 +80,7 @@ using LaptopShop.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"menu\">\r\n    <div class=\"wrap-content d-flex align-items-center\">\r\n        <div class=\"menu-left\">\r\n            <h2>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c49042", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c49247", async() => {
                 WriteLiteral("Danh mục sản phẩm");
             }
             );
@@ -113,7 +120,7 @@ using LaptopShop.Models;
 
         <ul class=""menu-list d-flex align-items-center"">
             <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c411242", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c411447", async() => {
                 WriteLiteral("Khuyến mãi");
             }
             );
@@ -133,7 +140,7 @@ using LaptopShop.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c412795", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c413000", async() => {
                 WriteLiteral("Tin tức");
             }
             );
@@ -153,7 +160,7 @@ using LaptopShop.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c414345", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c414550", async() => {
                 WriteLiteral("Chính sách");
             }
             );
@@ -173,7 +180,7 @@ using LaptopShop.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c415898", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c416103", async() => {
                 WriteLiteral("Giới thiệu");
             }
             );
@@ -193,7 +200,7 @@ using LaptopShop.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c417452", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c417657", async() => {
                 WriteLiteral("Liên hệ");
             }
             );
@@ -222,7 +229,7 @@ using LaptopShop.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c419267", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c419472", async() => {
                 WriteLiteral("Đăng nhập");
             }
             );
@@ -252,7 +259,7 @@ using LaptopShop.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c421073", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c421278", async() => {
                 WriteLiteral("Đăng Xuất");
             }
             );
@@ -280,7 +287,7 @@ using LaptopShop.Models;
 #line hidden
 #nullable disable
             WriteLiteral("       \r\n\r\n\r\n            <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c422861", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "320cc8a94bcf93e9469a400d618f86a3eb5d01c423066", async() => {
                 WriteLiteral("<i class=\"fas fa-shopping-cart\"></i>Giỏ hàng");
             }
             );

@@ -26,8 +26,15 @@ using LaptopShop.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\84348\OneDrive\Desktop\bug\doantotnghiep\LaptopShop\Views\_ViewImports.cshtml"
+using LaptopShop.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3bc56a725642925ad0c88501829a8cbc7d53ebe9", @"/Views/Home/Product_details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4b7744e0287f69a68d6cc5517a1538b1284205ee", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8f66d9f5e6cfba72e344d82a22442955372af3d", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Product_details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<LaptopShop.Areas.Admin.Models.Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-success addcart rounded-0 mr-2"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -76,7 +83,7 @@ using LaptopShop.Models;
 #line hidden
 #nullable disable
             WriteLiteral("    <div class=\"grid-pro-detail w-clear\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bc56a725642925ad0c88501829a8cbc7d53ebe96963", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bc56a725642925ad0c88501829a8cbc7d53ebe97168", async() => {
                 WriteLiteral("\r\n\r\n            <p class=\"title-pro-detail mb-2\">");
 #nullable restore
 #line 15 "C:\Users\84348\OneDrive\Desktop\bug\doantotnghiep\LaptopShop\Views\Home\Product_details.cshtml"
@@ -212,7 +219,7 @@ WriteAttributeValue("", 796, item.Image, 796, 11, false);
 #line hidden
 #nullable disable
                 WriteLiteral("</span>\r\n                            </div>\r\n                        </li>\r\n                        <li class=\"w-clear\">\r\n                            <div class=\"cart-pro-detail\">\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bc56a725642925ad0c88501829a8cbc7d53ebe913555", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bc56a725642925ad0c88501829a8cbc7d53ebe913760", async() => {
                     WriteLiteral("\r\n                                    <i class=\"fas fa-shopping-bag mr-1\"></i>\r\n                                    <span>Thêm vào giỏ hàng</span>\r\n                                ");
                 }
                 );
@@ -246,7 +253,7 @@ WriteAttributeValue("", 796, item.Image, 796, 11, false);
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bc56a725642925ad0c88501829a8cbc7d53ebe916421", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3bc56a725642925ad0c88501829a8cbc7d53ebe916626", async() => {
                     WriteLiteral("\r\n                                    <i class=\"fas fa-shopping-bag mr-1\"></i>\r\n                                    <span>Mua ngay</span>\r\n                                ");
                 }
                 );
@@ -583,7 +590,7 @@ WriteAttributeValue("", 796, item.Image, 796, 11, false);
                 <div class=""product-image"">
                     <a href=""dell-xps-15-9520-2022"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3bc56a725642925ad0c88501829a8cbc7d53ebe938213", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3bc56a725642925ad0c88501829a8cbc7d53ebe938418", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

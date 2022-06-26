@@ -26,8 +26,15 @@ using LaptopShop.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\84348\OneDrive\Desktop\bug\doantotnghiep\LaptopShop\Views\_ViewImports.cshtml"
+using LaptopShop.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fa8dd9b861fa5f5faeb5099ca2dd6799ed8029f6", @"/Views/Home/Policy.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4b7744e0287f69a68d6cc5517a1538b1284205ee", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8f66d9f5e6cfba72e344d82a22442955372af3d", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Policy : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

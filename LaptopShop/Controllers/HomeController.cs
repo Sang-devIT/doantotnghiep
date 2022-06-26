@@ -37,6 +37,7 @@ namespace LaptopShop.Controllers
         }
         public IActionResult Product()
         {
+            var dssp = _context.Products.Include(p => p.ProductType);
             if (HttpContext.Session.Keys.Contains("Username"))
             {
                 ViewBag.Username = HttpContext.Session.GetString("Username");
@@ -203,7 +204,7 @@ namespace LaptopShop.Controllers
         public ActionResult Logout()
         {
             HttpContext.Session.Clear();
-            return RedirectToAction("Login");
+            return RedirectToAction("Index");
         }
 
         public IActionResult AddToCart(int id)

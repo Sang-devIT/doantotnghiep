@@ -26,8 +26,15 @@ using LaptopShop.Areas.Admin.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\84348\OneDrive\Desktop\bug\doantotnghiep\LaptopShop\Areas\Admin\Views\_ViewImports.cshtml"
+using LaptopShop.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cd57850e725a9d9f884b86b2d9dedff51ea4a0fc", @"/Areas/Admin/Views/Shared/_nav.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"192d9cb21c03d074d05a26c4eaf0f4be258de63f", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c57514311bab2c85de99c9cc71262b7d0a7fabf3", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Shared__nav : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("app-menu__item active"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -225,7 +232,7 @@ using LaptopShop.Areas.Admin.Models;
             <p class=""app-sidebar__user-name"">John Doe</p>
             <p class=""app-sidebar");
             WriteLiteral("__user-designation\">Frontend Developer</p>\r\n        </div>\r\n    </div>\r\n    <ul class=\"app-menu\">\r\n        <li>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc14103", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc14308", async() => {
                 WriteLiteral("\r\n                <i class=\"app-menu__icon fa fa-dashboard\"></i><span class=\"app-menu__label\">Trang chủ</span>\r\n            ");
             }
             );
@@ -246,7 +253,7 @@ using LaptopShop.Areas.Admin.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n\r\n        <li class=\"treeview\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc15942", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc16147", async() => {
                 WriteLiteral("\r\n                <i class=\"app-menu__icon fa fa-laptop\"></i><span class=\"app-menu__label\">Người dùng</span>");
                 WriteLiteral("\r\n            ");
             }
@@ -270,7 +277,7 @@ using LaptopShop.Areas.Admin.Models;
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
             WriteLiteral("        </li>\r\n        <li>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc17905", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc18110", async() => {
                 WriteLiteral("\r\n                <i class=\"app-menu__icon fa fa-pie-chart\"></i><span class=\"app-menu__label\">Sản phẩm</span>\r\n            ");
             }
             );
@@ -291,7 +298,7 @@ using LaptopShop.Areas.Admin.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n\r\n        <li>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc19724", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc19929", async() => {
                 WriteLiteral("\r\n                <i class=\"app-menu__icon fa fa-pie-chart\"></i><span class=\"app-menu__label\">Hóa đơn</span>\r\n            ");
             }
             );
@@ -312,7 +319,7 @@ using LaptopShop.Areas.Admin.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n        </li>\r\n        <li>\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc21538", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd57850e725a9d9f884b86b2d9dedff51ea4a0fc21743", async() => {
                 WriteLiteral("\r\n                <i class=\"app-menu__icon fa fa-pie-chart\"></i><span class=\"app-menu__label\">Đánh giá</span>\r\n            ");
             }
             );

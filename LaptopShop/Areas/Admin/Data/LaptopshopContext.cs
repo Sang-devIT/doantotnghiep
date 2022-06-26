@@ -21,5 +21,6 @@ namespace LaptopShop.Areas.Admin.Data
         public DbSet<InvoiceDetail> InvoiceDetails { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Review> Reviews { get; set; }
+
     }
 }
