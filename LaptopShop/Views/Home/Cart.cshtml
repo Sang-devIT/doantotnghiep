@@ -56,10 +56,10 @@
                                     <div class="quantity-procart col-3 col-md-2">
                                       
                                         <div class="quantity-counter-procart d-flex align-items-stretch justify-content-between">
-                                            <span class="counter-procart-minus counter-procart">-</span>
-                                            <input type="number" class="quantity-procart" min="1" value="@item.Quantity" />
-                                            <span class="counter-procart-plus counter-procart">+</span>
-                                         
+                                            <a asp-controller="Home" asp-action="Giam" asp-route-id="@item.Id"><span class="counter-procart-minus counter-procart">-</span></a>
+                                            <input type="number" class="quantity-procart" min="1" value="@item.Quantity" readonly/>
+                                            <a asp-controller="Home" asp-action="Tang" asp-route-id="@item.Id"><span class="counter-procart-plus counter-procart">+</span></a>   
+                                          
                                         </div>
                                        
                                     </div>
@@ -70,21 +70,35 @@
 
                                     </div>
                                 </div>
+
                             </div>
                         }
+
                     </div>
                     <div class="money-procart">
                         @*<div class="total-procart d-flex align-items-center justify-content-between">
-                            <p>Tạm tính:</p>
-                            <p class="total-price load-price-temp">300.000đ</p>
-                        </div>
-                        <div class="total-procart d-flex align-items-center justify-content-between">
-                            <p>Phí vận chuyển:</p>
-                            <p class="total-price load-price-ship">0đ</p>
-                        </div>*@
+            <p>Tạm tính:</p>
+            <p class="total-price load-price-temp">300.000đ</p>
+        </div>
+        <div class="total-procart d-flex align-items-center justify-content-between">
+            <p>Phí vận chuyển:</p>
+            <p class="total-price load-price-ship">0đ</p>
+        </div>*@
                         <div class="total-procart d-flex align-items-center justify-content-between">
                             <p>Tổng tiền:</p>
                             <p class="total-price load-price-total"> @TotalBill().ToString("#,##0 VNĐ")</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="continue__btn">
+                                    <a asp-controller="Home" asp-action="Index">Continue Shopping</a>   
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="continue__btn update__btn">
+                                    <a asp-controller="Home" asp-action="UpdateCart"><i class="fa fa-spinner"></i> Update cart</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +123,7 @@
                             </div>
                             <div class="payments-cart custom-control custom-radio">
                                 <input type="radio" class="custom-control-input" id="payments-11" name="dataOrder[payments]" value="11" required>
-                                <label class="payments-label custom-control-label" for="payments-11" data-payments="11">Thanh toán tại điểm giao hàng</label>
+                                <label class="payments-label custom-control-label" for="payments-11" data-payments="11" id="method">Thanh toán tại điểm giao hàng</label>
                                 <div class="payments-info payments-info-11 transition">
                                     - Quý khách thanh toán cho nhân viên giao nhận toàn bộ hoặc phần còn lại của giá trị đơn hàng đã mua (nếu đã đặt cọc)
                                     <br>- Hình thức thanh toán này chỉ thực hiện với các đơn hàng có địa chỉ giao hàng tại nội thành thành phố Hà Nội (trong phạm vi bán kính 30 km tính từ nơi mua hàng).
@@ -121,31 +135,31 @@
                         <div class="information-cart">
                             <div class="form-row">
                                 <div class="input-cart col-md-6">
-                                    <input type="text" class="form-control text-sm" id="fullname" name="dataOrder[fullname]" placeholder="Họ tên" value="" required />
+                                    <input type="text" class="form-control text-sm" id="name" name="name" placeholder="Họ tên" value="" required />
                                     <div class="invalid-feedback">Vui lòng nhập họ và tên</div>
                                 </div>
                                 <div class="input-cart col-md-6">
-                                    <input type="number" class="form-control text-sm" id="phone" name="dataOrder[phone]" placeholder="Số điện thoại" value="" required />
+                                    <input type="number" class="form-control text-sm" id="phone" name="phone" placeholder="Số điện thoại" value="" required />
                                     <div class="invalid-feedback">Vui lòng nhập số điện thoại</div>
                                 </div>
                             </div>
-                            <div class="input-cart">
+                            @*<div class="input-cart">
                                 <input type="email" class="form-control text-sm" id="email" name="dataOrder[email]" placeholder="Email" value="" required />
                                 <div class="invalid-feedback">Vui lòng nhập địa chỉ email</div>
-                            </div>
+                            </div>*@
                             <div class="input-cart">
-                                <input type="text" class="form-control text-sm" id="address" name="dataOrder[address]" placeholder="Địa chỉ" value="" required />
+                                <input type="text" class="form-control text-sm" id="address" name="address" placeholder="Địa chỉ" value="" required />
                                 <div class="invalid-feedback">Vui lòng nhập địa chỉ</div>
                             </div>
                             <div class="input-cart">
                                 <textarea class="form-control text-sm" id="requirements" name="dataOrder[requirements]" placeholder="Yêu cầu khác (không bắt buộc)" /></textarea>
                             </div>
                         </div>
-                        <input type="submit" class="btn-cart btn btn-primary btn-lg btn-block" name="thanhtoan" value="Thanh toán" disabled />
+                        <input type="submit" class="btn-cart btn btn-primary btn-lg btn-block" name="thanhtoan" value="Thanh toán" disabled asp-action="Pay" asp-controller="Home"/>
                     </div>
                 </div>
             </div>
         </div>
     </form>
-</div> <div class="wrap-content padding-top-bottom">
 </div>
+ 

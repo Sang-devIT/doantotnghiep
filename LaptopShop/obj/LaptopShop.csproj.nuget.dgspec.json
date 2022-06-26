@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj": {}
+    "C:\\Users\\84348\\OneDrive\\Desktop\\bug\\doantotnghiep\\LaptopShop\\LaptopShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj": {
+    "C:\\Users\\84348\\OneDrive\\Desktop\\bug\\doantotnghiep\\LaptopShop\\LaptopShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj",
+        "projectUniqueName": "C:\\Users\\84348\\OneDrive\\Desktop\\bug\\doantotnghiep\\LaptopShop\\LaptopShop.csproj",
         "projectName": "LaptopShop",
-        "projectPath": "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\LaptopShop.csproj",
+        "projectPath": "C:\\Users\\84348\\OneDrive\\Desktop\\bug\\doantotnghiep\\LaptopShop\\LaptopShop.csproj",
         "packagesPath": "C:\\Users\\84348\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\84348\\OneDrive\\Desktop\\doantotnghiep\\LaptopShop\\obj\\",
+        "outputPath": "C:\\Users\\84348\\OneDrive\\Desktop\\bug\\doantotnghiep\\LaptopShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\84348\\AppData\\Roaming\\NuGet\\NuGet.Config",

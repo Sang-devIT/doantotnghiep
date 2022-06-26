@@ -1,6 +1,6 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<LaptopShop.Areas.Admin.Models.Product>
+
+
 
 <div class="wrap-container">
     <div class="slideshow d-flex">
@@ -27,7 +27,8 @@
                  data-navcontainer=".control-slideshow">
                 <div class="slideshow-item" owl-item-animation>
                     <a class="slideshow-image" href="" target="_blank" title="Banner">
-                        <img src="~/assets/images/slider-4347.jpg" /></a>
+                        <img src="~/assets/images/slider-4347.jpg" />
+                    </a>
                 </div>
                 <div class="slideshow-item" owl-item-animation>
                     <a class="slideshow-image" href="https://www.google.com/" target="_blank" title="Sneaker Shoes VI">
@@ -317,163 +318,30 @@
                      data-navtext="<i class='fa fa-chevron-left'></i>|<i class='fa fa-chevron-right'></i>"
                      data-navcontainer=".control-product2">
                     <div class="product-items">
+                       
                         <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/untitled-7-copy-7819.jpg' alt='Lenovo Legion 5 17″ Gen 6 (AMD) (2022)' />
-                                </a>
-                                <p>Có 1 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">Lenovo Legion 5 17″ Gen 6 (AMD) (2022)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   AMD Ryzen™ 5 5600H Up To 4.2GHz (6 Cores 19MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 8GB 3200MHz</p>
-                                <p class="product-struct"><span>SSD</span>   256GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   NVIDIA GeForce® GTX 1650 4GB GDDR6</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>23.500.000<sup>đ</sup></span>
-                            </p>
-                        </div>
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/dell-inspiron-14-5410-2021-features-04-1128.jpeg' alt='DELL Inspiron 14 5410 (2021)' />
-                                </a>
-                                <p>Có 2 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">DELL Inspiron 14 5410 (2021)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   Intel® Core i5 11300H Up To 4.4GHz (4 Cores 8MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 8GB 3200MHz</p>
-                                <p class="product-struct"><span>SSD</span>   512GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   Intel® Iris® Xe Graphics</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>19.500.000<sup>đ</sup></span>
-                            </p>
-                        </div>
+                            @foreach (var item in Model)
+                            {
+                                <div class="product-image">
+                                    <a>
+                                        <img class='lazy' onerror="this.src = '@item.Image';" data-src='@item.Image' alt='Lenovo Legion 5 17″ Gen 6 (AMD) (2022)' />
+                                    </a>
 
-                    </div>
-                    <div class="product-items">
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/lenovo-thinkpad-p50-mobile-workstation-h1-7011.jpeg' alt='Lenovo ThinkPad P50 – Mobile WorkStation' />
-                                </a>
-                                <p>Có 1 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">Lenovo ThinkPad P50 – Mobile WorkStation</a></h3>
-                                <p class="product-struct"><span>CPU</span>   Intel Core Xeon E3-1505Mv5 Up To 3.7GHz vPro (4 Cores 8MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>    DDR4 32GB 2133MHz</p>
-                                <p class="product-struct"><span>SSD</span>   512GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   NVIDIA Quadro® M2000M 4GB GDDR5</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>21.500.000<sup>đ</sup></span>
-                            </p>
-                        </div>
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/hp-laptop-14-amd-2021-h1-5022.jpeg' alt='HP Laptop 14 (AMD) (2021)' />
-                                </a>
-                                <p>Có 1 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">HP Laptop 14 (AMD) (2021)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   AMD Ryzen™ 3 5300U Up To 3.8GHz (4 Cores 6MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 8GB 3200MHz</p>
-                                <p class="product-struct"><span>SSD</span>   256GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   Integrated AMD Radeon™ Graphics</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>12.800.000<sup>đ</sup></span>
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="product-items">
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/dell-vostro-3510-2021-h1-4149.jpeg' alt='DELL Vostro 3510 (2021)' />
-                                </a>
-                                <p>Có 1 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">DELL Vostro 3510 (2021)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   Intel® Core i7 1165G7 Up To 4.7GHz (4 Cores 12MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 8GB 2666MHz</p>
-                                <p class="product-struct"><span>SSD</span>   512GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   Intel® Iris® Xe Graphics</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>19.800.000<sup>đ</sup></span>
-                            </p>
-                        </div>
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/dell-vostro-15-5510-2021-h1-1119.jpeg' alt='DELL Vostro 15 5510 (2021)' />
-                                </a>
-                                <p>Có 1 lựa chọn cấu hình</p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">DELL Vostro 15 5510 (2021)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   Intel® Core i7 11390H Up To 5.0GHz (4 Cores 12MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 16GB 3200MHz</p>
-                                <p class="product-struct"><span>SSD</span>   512GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   Intel® Iris® Xe Graphics</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>25.800.000<sup>đ</sup></span>
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="product-items">
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/dell-latitude-3420-2021-h1-6184.jpeg' alt='DELL Latitude 3420 (2021)' />
-                                </a>
-                                <p>
-                                    Có 1 lựa chọn 3 cấu hình<br />
+                                </div>
+                                <div class="product-desc">
+                                    <h3 class="product-name"><a asp-controller="Home" asp-action="Product_details" asp-route-id="@item.Id">Lenovo Legion 5 17″ Gen 6 (AMD) (2022)</a></h3>
+                                    <p class="product-struct"><span>CPU</span>  @item.Cpu </p>
+                                    <p class="product-struct"><span>RAM</span>  @item.Ram</p>
+                                    <p class="product-struct"><span>SSD</span>  @item.Storage</p>
+                                    <p class="product-struct"><span>VGA</span>   @item.Graphics</p>
+                                </div>
+                                <p class="product-price">
+                                    Giá từ:<span class='price-new'>@item.Price.ToString("#,##0 VNĐ")</span>
                                 </p>
+                            }
                             </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">DELL Latitude 3420 (2021)</a></h3>
-                                <p class="product-struct"><span>CPU</span>   Intel Core i5 1165G7 Up To 4.7GHz (4 Cores 12MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR4 8GB 3200MHz</p>
-                                <p class="product-struct"><span>SSD</span>   256GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   Intel® Iris® Xe Graphics</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>19.800.000<sup>đ</sup></span>
-                            </p>
-                        </div>
-                        <div class="product-item">
-                            <div class="product-image">
-                                <a asp-controller="Home" asp-action="SignleProduct">
-                                    <img class='lazy' onerror="this.src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/assets/images/noimage.png';" data-src='http://localhost:8080/laptopannhien_638622W/thumbs/540x418x1/upload/product/dell-xps-15-9520-2022-h1-4348.jpeg' alt='DELL XPS 15 9520 (2022) ' />
-                                </a>
-                                <p>
-                                    Có 2 lựa chọn cấu hình<br />
-                                </p>
-                            </div>
-                            <div class="product-desc">
-                                <h3 class="product-name"><a asp-controller="Home" asp-action="SignleProduct">DELL XPS 15 9520 (2022) </a></h3>
-                                <p class="product-struct"><span>CPU</span>   Intel Core i7 12700H vPro Up To 4.7GHz (14 Cores, 20 Threads, 24MB Cache)</p>
-                                <p class="product-struct"><span>RAM</span>   DDR5 16GB 4800MHz</p>
-                                <p class="product-struct"><span>SSD</span>   512GB PCIe M.2 SSD</p>
-                                <p class="product-struct"><span>VGA</span>   NVIDIA® GeForce RTX™ 3050 Ti 4GB GDDR6</p>
-                            </div>
-                            <p class="product-price">
-                                Giá từ:<span class='price-new'>60.000.000<sup>đ</sup></span>
-                            </p>
-                        </div>
+                       
+                        
 
                     </div>
 
