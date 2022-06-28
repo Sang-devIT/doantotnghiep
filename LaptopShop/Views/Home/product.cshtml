@@ -4,33 +4,38 @@
     <div class="content-main">
         <div class="title-main"><span>Sản phẩm</span></div>
         @*<?php if(!empty($product)) { ?>*@
-        <div class="product-content d-flex w-clear">
+       
             @*<?php  foreach($product as $k => $v) { ?>*@
-            @foreach (var item in Model)
-            {
-                <div class="product-items-detail">
-                    <div class="product-item">
-                        <div class="product-image">
-                            <a href="<?=$v[$sluglang]?>">
-                                <img class='lazy' onerror="this.src = '@item.Image';" data-src='@item.Image' alt='Lenovo Legion 5 17″ Gen 6 (AMD) (2022)' />
-                            </a>
-                            <p></p>
-                        </div>
-                        <div class="product-desc">
-                            <h3 class="product-name"><a asp-controller="Home" asp-action="Product_details" asp-route-id="@item.Id">@item.Name</a></h3>
-                            <p class="product-struct"><span>CPU</span>  @item.Cpu </p>
-                            <p class="product-struct"><span>RAM</span>  @item.Ram</p>
-                            <p class="product-struct"><span>SSD</span>  @item.Storage</p>
-                            <p class="product-struct"><span>VGA</span>   @item.Graphics</p>
-                        </div>
-                        <p class="product-price">
-                            Giá từ:<span class='price-new'>@item.Price.ToString("#,##0 VNĐ")</span>
-                        </p>
-                    </div>
+            
+    <div class="product-items-detail">
+        @foreach (var item in Model)
+        {
+            <div class="product-item">
+                <div class="product-image">
+                    <a href="<?=$v[$sluglang]?>">
+                        <img class='lazy' onerror="this.src = '@item.Image';" data-src='@item.Image' alt='Lenovo Legion 5 17″ Gen 6 (AMD) (2022)' />
+                    </a>
+                    <p></p>
                 </div>
-            }
-            @*<?php } ?>*@
+                <div class="product-desc">
+                    <h3 class="product-name"><a asp-controller="Home" asp-action="Product_details" asp-route-id="@item.Id">@item.Name</a></h3>
+                    <p class="product-struct"><span>CPU</span>  @item.Cpu </p>
+                    <p class="product-struct"><span>RAM</span>  @item.Ram</p>
+                    <p class="product-struct"><span>SSD</span>  @item.Storage</p>
+                    <p class="product-struct"><span>VGA</span>   @item.Graphics</p>
+                </div>
+                <p class="product-price">
+                    Giá từ:<span class='price-new'>@item.Price.ToString("#,##0 VNĐ")</span>
+                </p>
+                <p class="cart-product d-flex flex-wrap justify-content-between">
+                    <span class="cart-add addcart transition">thêm vào giỏ hàng</span>
+                    <span class="cart-buy addcart transition">mua ngay</span>
+                </p>
+            </div>
+        }
         </div>
+           
+            @*<?php } ?>*@
         @*<?php } else { ?>*@
         @*<div class="col-12">
                 <div class="alert alert-warning w-100" role="alert">

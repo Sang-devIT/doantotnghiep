@@ -3,70 +3,73 @@
 @{
     ViewData["Title"] = "Details";
 }
+<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
 
-<h2>Details</h2>
+<main class="app-content">
+    <h2>Details</h2>
 
-<div>
-    <h4>Invoice</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.User)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.User.Id)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.OrderDate)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.OrderDate)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.ShippingAddress)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.ShippingAddress)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.ShippingPhone)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.ShippingPhone)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.ShippingName)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.ShippingName)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.PaymentModethod)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.PaymentModethod)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Paid)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Paid)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Total)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Total)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div>
+        <h4>Invoice</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.User)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.User.Id)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.OrderDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShippingAddress)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShippingAddress)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShippingPhone)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShippingPhone)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.ShippingName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.ShippingName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PaymentModethod)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.PaymentModethod)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Paid)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Paid)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Total)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Total)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+    </main>

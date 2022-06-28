@@ -2,8 +2,8 @@
 <div class="wrap-main  w-clear">
     @foreach (var item in Model)
     {
-        <div class="grid-pro-detail w-clear">
-
+    <div class="grid-pro-detail w-clear">
+        <form enctype="multipart/form-data" asp-controller="Home" asp-action="AddToCart" method="post">
 
             <p class="title-pro-detail mb-2">@item.Name</p> (@item.Average_Number_Stars sao/@item.Number_Of_Reviews Đánh giá)
 
@@ -43,7 +43,7 @@
 
                                 <div class="quantity-counter-procart d-flex align-items-stretch justify-content-between">
                                     <span class="counter-procart-minus counter-procart">-</span>
-                                    <input type="number" class="quantity-procart" min="1" value="1" />
+                                    <input type="number" class="quantity-procart" min="1" value="1" id="Quantity"  name="Quantity" />
                                     <span class="counter-procart-plus counter-procart">+</span>
 
                                 </div>
@@ -81,8 +81,8 @@
                 </div>
             </div>
 
-
-        </div>
+            </form>
+    </div>
 
         <div class="tags-pro-detail w-clear">
         </div>

@@ -16,6 +16,7 @@ namespace LaptopShop.Areas.Admin.Models
         [DisplayName("Giá")]
         public int  Price { get; set; }
         [DisplayName("Tồn kho")]
+        
         public int Stock { get; set; }
         [DisplayName("Ảnh")]
         public string Image { get; set; }
